@@ -38,5 +38,10 @@
                 <i class="fa-solid fa-x icon"></i>
             </div>
             
-            <p>Hello World!</p>
+            <p>Web Dev Bountyhunters</p>
+
+            <a id="login" href="#">
+                <i class="fa-solid fa-right-to-bracket"></i>
+                Login
+            </a>
         </header>

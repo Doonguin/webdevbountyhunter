@@ -2,7 +2,7 @@
 
 :root {
     --font: "Rubik", sans-serif;
-    --main-dark: rgb(52, 52, 58);
-    --list-item-hover: rgb(92, 92, 102);
+    --main-dark: rgb(214, 214, 214);
+    --list-item-hover: rgb(202, 202, 202);
     --list-item-active: rgb(255, 137, 40);
 }

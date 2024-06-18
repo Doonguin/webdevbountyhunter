@@ -8,13 +8,18 @@ header {
     display: flex;
     flex-direction: row;
 
+    align-items: center;
+
     box-sizing: border-box;
 }
 
 header > p {
     margin: 0;
 
+    display: block;
+
     width: 100%;
+    height: fit-content;
 
     text-align: center;
 }
@@ -48,6 +53,22 @@ header > p {
     opacity: 0;
 }
 
+#login {
+    display: flex;
+
+    flex-direction: row;
+
+    gap: 7px;
+
+    text-decoration: none;
+
+    color: black;
+}
+
+#login:active {
+    color: black;
+}
+
 /* Styling for the main element */
 main {
     width: 100%;
@@ -57,10 +78,11 @@ main {
 
     background-color: white;
 
-    transition: transform .2s ease-in-out;
+    transition: width .2s ease-in-out, transform .2s ease-in-out;
 }
 
 main.open {
+    width: calc(100% - 250px);
     transform: translateX(250px);
 }
 
@@ -77,8 +99,6 @@ main.open {
 #sidebar > h1 {
     margin: 0;
     padding: 10px 0;
-
-    color: white;
 
     text-align: center;
 
@@ -105,8 +125,6 @@ main.open {
 
     border-radius: 7px;
 
-    color: white;
-
     padding: 0 5px;
 
     box-sizing: border-box;
@@ -118,6 +136,7 @@ main.open {
 
 .listItem.active {
     background-color: var(--list-item-active) !important;
+    color: white;
 }
 
 .listItem:hover {
