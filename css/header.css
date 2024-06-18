@@ -38,6 +38,16 @@ header > p {
     user-select: none;
 }
 
+#hamburger > .icon {
+    position: absolute;
+
+    transition: opacity .2s ease-in-out;
+}
+
+#hamburger > .icon:nth-child(2) {
+    opacity: 0;
+}
+
 /* Styling for the main element */
 main {
     width: 100%;
