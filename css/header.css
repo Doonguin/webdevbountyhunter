@@ -1,0 +1,115 @@
+/* Styling for the header element and it's children */
+header {
+    width: 100%;
+    height: fit-content;
+
+    padding: 10px;
+
+    display: flex;
+    flex-direction: row;
+
+    box-sizing: border-box;
+}
+
+header > p {
+    margin: 0;
+
+    width: 100%;
+
+    text-align: center;
+}
+
+#hamburger {
+    width: 30px;
+    aspect-ratio: 1/1;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border: 2px solid black;
+    border-radius: 5px;
+
+    box-sizing: border-box;
+
+    cursor: pointer;
+
+    user-select: none;
+}
+
+/* Styling for the main element */
+main {
+    width: 100%;
+    height: 100%;
+
+    position: relative;
+
+    background-color: white;
+
+    transition: transform .2s ease-in-out;
+}
+
+main.open {
+    transform: translateX(250px);
+}
+
+/* Styling for the sidebar element and it's children */
+#sidebar {
+    height: 100%;
+    width: 250px;
+
+    background-color: var(--main-dark);
+
+    position: absolute;
+}
+
+#sidebar > h1 {
+    margin: 0;
+    padding: 10px 0;
+
+    color: white;
+
+    text-align: center;
+
+    font-size: 25px;
+}
+
+.list {
+    width: 100%;
+    height: auto;
+
+    padding: 0 10px;
+
+    box-sizing: border-box;
+}
+
+.listItem {
+    width: 100%;
+    height: 30px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 7px;
+
+    color: white;
+
+    padding: 0 5px;
+
+    box-sizing: border-box;
+
+    cursor: pointer;
+
+    transition: background-color .2s ease-in-out;
+}
+
+.listItem.active {
+    background-color: var(--list-item-active) !important;
+}
+
+.listItem:hover {
+    background-color: var(--list-item-hover);
+}
